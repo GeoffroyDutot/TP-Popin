@@ -11,11 +11,14 @@
     
 <!-- Bouton pour afficher le popin -->
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ouvrir</button>
+<br>
+<span></span>
 
 <!-- contenu du popin -->
 <div id="id01" class="popin">
 
-  <form class="popin-content">
+    <form class="popin-content">
+
     <div class="container">
 
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
@@ -26,15 +29,19 @@
         </center>
 
         <label for="uname"><b>Email</b></label>
-        <input type="text" placeholder="Entrez votre E-mail" name="uname" required>
+        <input type="text" name="email" size="30" onkeydown="verifMail(this)" />
       
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" onclick="message_confirmation();" id="send" class="disabled_button" disabled>Envoyer</button>
       
-    </div>
-    
-  </form>
+    </div>  
+
+</form>
+
 </div>
+
+
+
 
 <!--- Lien vers le script js-->
 <script src="popin.js"></script>

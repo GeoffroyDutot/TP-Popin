@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>TP Popin</title>
+    <link rel="stylesheet" href="popin.css">
+  
+</head>
+<body>
+    
+<!-- Bouton pour afficher le popin -->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ouvrir</button>
+
+<!-- contenu du popin -->
+<div id="id01" class="popin">
+
+  <form class="popin-content">
+    <div class="container">
+
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+
+        <center>
+            <h1>Veuillez entrer votre E-mail pour récupérer votre Mascotte préférée #DEV :D</h1>
+            <img src="DEV.jpg" width="50%" height="50%">
+        </center>
+
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Entrez votre E-mail" name="uname" required>
+      
+
+        <button type="submit">Envoyer</button>
+      
+    </div>
+    
+  </form>
+</div>
+
+<!--- Lien vers le script js-->
+<script src="popin.js"></script>
+</body>
+</html>

@@ -61,5 +61,27 @@ button:hover {
     width: 50%; 
 }
 
+.disabled_button :hover{
+    opacity: 1;
+}
+.disabled_button{
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+.disabled_button :hover{
+    opacity: 1;
+}
+
+span {
+
+    background-color: red;
+    
+}
 
 

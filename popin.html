@@ -10,7 +10,7 @@
 <body>
     
 <!-- Bouton pour afficher le popin -->
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ouvrir</button>
+<button id="ouvreur"  style="width:auto;">Ouvrir</button>
 <br>
 <span></span>
 
@@ -21,7 +21,7 @@
 
     <div class="container">
 
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+        <button type="button" id="fermeur"  class="cancelbtn">Fermer</button>
 
         <center>
             <h1>Veuillez entrer votre E-mail pour récupérer votre Mascotte préférée #DEV :D</h1>
@@ -29,10 +29,10 @@
         </center>
 
         <label for="uname"><b>Email</b></label>
-        <input type="text" name="email" size="30" onkeydown="verifMail(this)" />
+        <input type="text" name="email" size="30" id="saisie_mail"  />
       
 
-        <button type="submit" onclick="message_confirmation();" id="send" class="disabled_button" disabled>Envoyer</button>
+        <button type="submit" id="send" class="disabled_button" disabled>Envoyer</button>
       
     </div>  
 
@@ -44,6 +44,7 @@
 
 
 <!--- Lien vers le script js-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="popin.js"></script>
 </body>
 </html>

@@ -38,8 +38,6 @@ button:hover {
 
 }
 
-
-
 /* Fond du popin */
 .popin {
     display: none;
@@ -77,5 +75,4 @@ button:hover {
 .disabled_button :hover{
     opacity: 1;
 }
-
 

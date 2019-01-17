@@ -1,4 +1,5 @@
 
+
 // recupérer la div Popin grâce à l'id
 var popin = document.getElementById('id01');
 
@@ -9,28 +10,26 @@ window.onclick = function(event) {
     }
 }
 
-// Piste : recherche comment desactiver/empecher le rechargement lié au formulaire
+// Commentaire validaton inscription
 
-        document.querySelector("form").addEventListener("submit", function(message_confirmation){
-        span.innerHTML = 'Vous êtes bien enregistré';
-        var span = document.querySelector("span");
-        if(span = "Vous êtes bien enregistré")
-        submit.preventDefault();
-
-
+        document.querySelector("form").addEventListener("submit", function(event){
+        event.preventDefault()
+        popin.style.display = "none";
+        var span = document.querySelector('span');
+        span.innerText='Vous êtes bien enregistré';
   });
  
-
-
-  window.onkeydown = function(event){
+// Fermeture du Popin grâce au bouton "Echap"
+    window.onkeydown = function(event){
     if (event.keyCode == 27) {
         popin.style.display = "none";
     }
 }
 
+// Verification champ E-mail
 function verifMail(champ)
 { 
-   var regex = /^[a-zA-Z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$/;
+   var regex = /^[a-zA-Z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{1,4}$/;
    var bouton_send = document.getElementById("send")
    if(!regex.test(champ.value))
    {

@@ -15,12 +15,12 @@
   "bugs": {
     "url": "https://github.com/NicolasHAMY/TP-Popin/issues"
   },
-<<<<<<< HEAD
+
   "homepage": "https://github.com/NicolasHAMY/TP-Popin#readme",
   "dependencies": {
     "gulp": "^3.9 .1"
   }
-=======
-  "homepage": "https://github.com/NicolasHAMY/TP-Popin#readme"
->>>>>>> 0835e813ff63184f428574ab355414d85f6c95f3
+
+
+
 }

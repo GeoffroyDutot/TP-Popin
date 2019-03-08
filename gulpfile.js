@@ -49,7 +49,7 @@ gulp.task('bundle_css', function(){
 
 
 });
-
+/*
 gulp.task('bundle_php', function(){
 
     return gulp.src(['./src/php/*.php'])
@@ -58,7 +58,7 @@ gulp.task('bundle_php', function(){
 
 });
 
-/*gulp.task('bundle_html', function(){
+gulp.task('bundle_html', function(){
 
     return gulp.src(['./src/html/*.html'])
         .pipe(gp_uglify())
@@ -68,7 +68,6 @@ gulp.task('bundle_php', function(){
 */
 gulp.task('zip', () =>
     gulp.src('./src/public/*')
-
         .pipe(zip('rendu_projet.zip'))
         .pipe(gulp.dest('packaging'))
 );

@@ -12,14 +12,14 @@ cleanCSS = require('gulp-clean-css');
 
 // SASS, concaténation de fichiers et minification
 gulp.task('css', function () {
-    return gulp.src('./src/*.scss')
+    return gulp.src('./src/css/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('./src/css'));
 
 })
 
 gulp.task('js', () =>
-    gulp.src('./src/*.es')
+    gulp.src('./src/js/*.es')
         .pipe(babel())
         .pipe(gulp.dest('./src/js'))
 );

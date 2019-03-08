@@ -58,16 +58,17 @@ gulp.task('bundle_php', function(){
 
 });
 
-gulp.task('bundle_html', function(){
+/*gulp.task('bundle_html', function(){
 
     return gulp.src(['./src/html/*.html'])
         .pipe(gp_uglify())
         .pipe(gulp.dest('./src/public'));
 
 });
-
+*/
 gulp.task('zip', () =>
     gulp.src('./src/public/*')
+
         .pipe(zip('rendu_projet.zip'))
         .pipe(gulp.dest('packaging'))
 );

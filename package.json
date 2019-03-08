@@ -1,0 +1,19 @@
+{
+  "name": "tp-popin",
+  "version": "1.0.0",
+  "description": "TP JavaScript N°01 : Creation d'un Popin !",
+  "main": "popin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasHAMY/TP-Popin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasHAMY/TP-Popin/issues"
+  },
+  "homepage": "https://github.com/NicolasHAMY/TP-Popin#readme"
+}

@@ -15,15 +15,21 @@
   "bugs": {
     "url": "https://github.com/NicolasHAMY/TP-Popin/issues"
   },
-
   "homepage": "https://github.com/NicolasHAMY/TP-Popin#readme",
   "dependencies": {
-    "gulp": "^3.9 .1"
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^4.2.0",
+    "node-sass": "^4.11.0"
   }
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 61b0ffb9ea93137f9f8f2e7adc7651800e6afdf2
 }

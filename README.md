@@ -6,3 +6,4 @@ Composition du groupe
 GRACIA Nathan, 
 DECHAUD Margaux, 
 HAMY Nicolas
+BOURRASSEAU Simon

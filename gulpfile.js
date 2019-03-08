@@ -12,53 +12,41 @@ cleanCSS = require('gulp-clean-css');
 
 // SASS, concaténation de fichiers et minification
 gulp.task('css', function () {
-    return gulp.src('*.scss')
+    return gulp.src('./src/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('./src/css'));
 
 })
 
 gulp.task('js', () =>
-    gulp.src('*.es')
+    gulp.src('./src/*.es')
         .pipe(babel())
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('./src/js'))
 );
 
 
 gulp.task('bundle_js', function(){
 
-    return gulp.src(['./js/*.js'])
+    return gulp.src(['./src/js/*.js'])
         .pipe(gp_concat('concat.js'))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest('./src/public'))
         //.pipe(gp_rename('uglify.js'))
         .pipe(gp_uglify())
-        .pipe(gulp.dest('public'));
-
-  return gulp.src(['./js/*.js'])
-      .pipe(gp_concat('concat.js'))
-      .pipe(gulp.dest('public'))
-      //.pipe(gp_rename('uglify.js'))
-      .pipe(gp_uglify())
-      .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('./src/public'));
 
 });
 
 
 gulp.task('bundle_css', function(){
 
-    return gulp.src(['./css/*.css'])
+    return gulp.src(['./src/css/*.css'])
         .pipe(gp_concat('concat.css'))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest('./src/public'))
         //.pipe(gp_rename('uglify.js'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('./src/public'));
 
-  return gulp.src(['./css/*.css'])
-      .pipe(gp_concat('concat.css'))
-      .pipe(gulp.dest('public'))
-      //.pipe(gp_rename('uglify.js'))
-      .pipe(cleanCSS({compatibility: 'ie8'}))
-      .pipe(gulp.dest('public'));
+
 
 });
 

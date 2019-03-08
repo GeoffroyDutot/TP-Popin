@@ -7,3 +7,4 @@ GRACIA Nathan,
 DECHAUD Margaux, 
 HAMY Nicolas
 BOURRASSEAU Simon
+DUTOT Geoffroy
